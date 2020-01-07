@@ -2,13 +2,18 @@
 <html>
 
 <head>
+	{% load static %}
+	<link rel="stylesheet" href=" {% static "style.css" %} ">
 	<meta charset="utf-8">
 	<title>TCS - Courier Service - Home</title>
 	<style>
 		#myVideo {
-			position: fixed;
+			position: absolute;
+			height: 95%;
 			right: 0;
 			bottom: 0;
+			top: 5%;
+			left: 0;
 		}
 
 		.content {
@@ -20,7 +25,7 @@
 			height: 100%;
 		}
 
-		a {
+		.content a {
 			display: block;
 			text-decoration: none;
 			color: black;
@@ -33,13 +38,16 @@
 	</style>
 </head>
 
-<body bgcolor="ff0000">
+<body>
+	<nav class="top_red_banner">
+        <a href="tel:+92-321-1234567">Call us</a>
+    </nav>
 	<video width="100%" height="100%" autoplay loop muted id="myVideo">
-		{% load static %}
+		
 		<source src= "{% static "homepage/HazirSubKuch.mp4" %}" >
 	</video>
 	<div class="content">
-		<a href="/"><img src="{% static "TCS.jpg" %}" height="100"></a>
+		<a href="/"><img src="{% static "TCS.png" %}" height="100"></a>
 		<table style="margin-top: 5%" width="260" border="3" align="right" height="100" bordercolor="#ffffff">
 			<tbody align="center">
 				<tr>

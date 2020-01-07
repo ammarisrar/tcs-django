@@ -1,0 +1,27 @@
+.top_red_banner{
+    background-color: red;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: end;
+}
+
+.top_red_banner a{
+    font-size: large;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    margin-right: 1%;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top_red_banner a:hover{
+    background-color: white;
+    color: red;
+}
+
+body{
+    margin: 0px;
+}
+

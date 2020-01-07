@@ -2,13 +2,17 @@
 <html>
 
 <head>
+    {% load static %}
     <meta charset="utf-8">
     <title>TCS - Track Order</title>
+    <link rel="stylesheet" href=" {% static "style.css" %} ">
 </head>
 
-<body bgcolor="#ff0000">
-    {% load static %}
-    <a href="/"><img src=" {% static "TCS.jpg" %} " height="100"></a>
+<body>
+    <nav class="top_red_banner">
+        <a href="tel:+92-321-1234567">Call us</a>
+    </nav>
+    <a href="/"><img src=" {% static "TCS.png" %} " height="100"></a>
 </body>
 
 </html>
