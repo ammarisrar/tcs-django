@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>TCS - Courier Service - Home</title>
+	<style>
+		#myVideo {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+		}
+
+		.content {
+			position: fixed;
+			bottom: 1;
+			background: rgba(0, 0, 0, 0);
+			color: #f1f1f1;
+			width: 100%;
+			height: 100%;
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+			color: black;
+		}
+
+		td:hover a {
+			background-color: red;
+			color: white;
+		}
+	</style>
+</head>
+
+<body bgcolor="ff0000">
+	<video width="100%" height="100%" autoplay loop muted id="myVideo">
+		{% load static %}
+		<source src= "{% static "homepage/HazirSubKuch.mp4" %}" >
+	</video>
+	<div class="content">
+		<a href="/"><img src="{% static "TCS.jpg" %}" height="100"></a>
+		<table style="margin-top: 5%" width="260" border="3" align="right" height="100" bordercolor="#ffffff">
+			<tbody align="center">
+				<tr>
+					<td bgcolor="#ffffff">
+						<a href="about/">
+							<font size="+2">About</font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="#ffffff">
+						<a href="contact/">
+							<font size="+2">Contact</font>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="#ffffff">
+						<a href="track/">
+							<font size="+2">Track Order</font>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
